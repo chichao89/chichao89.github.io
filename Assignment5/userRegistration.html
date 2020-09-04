@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>User Registration Form</title>
+
+<head>
+    <style>
+        td.formHeader {
+            color: blueviolet;
+            font-weight: bold;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Welcome to the user registration form</h1>
+
+    <div>
+        <form action="C:\Users\Javier\Desktop\Mages\FSDP\introtodeve2\Assignment5\submitForm.html">
+            <table>
+                <tr>
+                    <td class="formHeader">First Name:</td>
+                    <td><input type="text" name="firstname"></input></td>
+                </tr>
+                <tr>
+                    <td class="formHeader">Last Name:</td>
+                    <td><input type="text" name="lastname"></input></td>
+                </tr>
+                <tr>
+                    <td class="formHeader">Marital Status:</td>
+                    <td><input type="radio" name="maritalstatus" value="Married">Married</input>
+                        <input type="radio" name="maritalstatus" value="Unmarried">Unmarried</input></td>
+                </tr>
+                <tr>
+                    <td class="formHeader">Programming Language:</td>
+                    <td><input type="checkbox" name="programming_language_option" value="HTML">HTML</input>
+                        <input type="checkbox" name="programming_language_option" value="Javascript">Javascript</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:right;">
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
