@@ -1,0 +1,26 @@
+p {
+    color:blueviolet;
+    text-align: center;
+}
+
+.heading {
+    color:blue;
+    font-variant-caps: all-petite-caps;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 50px 50px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#div1 {
+    color:red;
+    font-weight:900px;
+    font-size:larger;
+    text-justify: distribute;
+    text-transform: uppercase;
+ }
+
+
+
+
