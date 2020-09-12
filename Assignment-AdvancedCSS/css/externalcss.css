@@ -1,0 +1,48 @@
+table.nostyle {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 50px;
+  margin: 50px;
+  padding: 25px;
+}
+
+table.zebra {
+  border-collapse: collapse;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 8px;
+  font-size: larger;
+  width: 60%;
+}
+table.zebra tr:nth-child(odd) {
+  background-color: greenyellow;
+}
+
+table.findImages {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-image: url("../css/Image/mypersonalphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: blue;
+  font-weight: bolder;
+}
+table.findImages tr td {
+  height: 6vw;
+  width: 6vw;
+}
+.center {
+  text-align: center;
+}
+.center a:link {
+  color: red;
+}
+.center a:visited {
+  color: green;
+}
+.center a:hover {
+  color: blue;
+}

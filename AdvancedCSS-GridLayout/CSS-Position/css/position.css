@@ -1,0 +1,14 @@
+/* {
+    box-sizing: border-box;
+}*/
+
+div>[class*="box"]  {
+    border: 5px solid blue;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+div > div {
+    /*float: left;*/ /*float to the left so that the other elements can take up the remaining space*/
+    width: 25%;
+}

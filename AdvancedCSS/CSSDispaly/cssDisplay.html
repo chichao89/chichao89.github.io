@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span.block {
+  display: block;
+  color: green;
+}
+
+span.inline {
+  display: inline;
+  color: red;
+}
+
+span.inlineBlock {
+  display: inline-block;
+  color: blue;
+  width: 50px;
+  height: 50px;
+}
+</style>
+</head>
+<body>
+
+<span>A display property with a value of "block" results in</span> <span class="block">a line break between the two elements.</span>
+
+<p>A display property with a value of "inline" results in <span class="inline">no line break between</span> the two elements.</p>
+
+<p>A display property with a value of "inline-block" results in <span class="inlineBlock">no line break between</span> the two elements but still formatted as a block.</p>
+
+</body>
+</html>
