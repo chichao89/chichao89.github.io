@@ -1,6 +1,9 @@
+/*to make sure the size is contained and not take up additional width,height,padding*/
 * {
   box-sizing: border-box;
 }
+
+/*body default elements*/
 body {
   margin: 0;
   font-family: "Comfortaa", cursive;
@@ -25,17 +28,37 @@ h1,h2,h3{
   padding: 1em 0;
 }
 
-.bTitle {
-  color: violet;
-}
-.hTitle {
-  font-size: 1.2em;
+h1.hTitle {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2.5em;
+  color : #AFFC41;
 }
 
+/*h3 class*/
+h3.bTitle {
+  color: violet;
+}
+
+/*h2 attributes*/
 h2.title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
   text-emphasis: bold;
+}
+
+h2.title a{
+  text-decoration: none;
+  display: inline-block;
+  background: #333;
+}
+
+h2.title a:visited{
+  color: lightcyan;
+}
+
+h2.title a:hover{
+  background: #086375;
+  color: #fff;
 }
 
 p {
@@ -43,6 +66,12 @@ p {
   padding: 1em 0;
 }
 
+p.pHead1 {
+  color: darkkhaki;
+  font-size: 1.2em;
+}
+
+/*div attributes*/
 .wrapper{
   display: block;
   text-align: center;
@@ -60,6 +89,7 @@ p {
   padding: 0 5px;
 
 }
+/*for the navigation links*/
 .bottom {
   display: inline-block;
   background: #333;
@@ -78,7 +108,6 @@ p {
   background: #eaeaea;
   color: #333;
 }
-
 
 .navB:hover {
   color: orange;
@@ -112,11 +141,8 @@ p {
   z-index: -1;
   opacity: 0.5;
 }
-.pHead1 {
-  color: darkkhaki;
-  font-size: 1.2em;
-}
 
+/*section div attributes*/
 #sectionA {
   background: #f7f7f2;
   color: #ee4266;
@@ -151,6 +177,7 @@ p {
   background: #ee4266;
 }
 
+/*sectionD attributes*/
 .columnFit {
   display:block;
   width:100%;
@@ -174,13 +201,11 @@ textarea {
   width: 50%;
   height: 50%;
 }
-submit {
-  width : 30%;
-}
+
 .formHead {
   width:100%;
 }
-
+/*footer attribute*/
 #footerHead .footer {
   font-size: 0.5em;
   color: black;
@@ -190,8 +215,9 @@ submit {
   width:100%;
   background:white;
 }
+
 /* Media Queries */
-/*creating the columns with 4 columns*/
+/*creating the columns with 4 columns when the width is 700px*/
 @media (min-width: 700px) {
   .grid {
     display: grid;
