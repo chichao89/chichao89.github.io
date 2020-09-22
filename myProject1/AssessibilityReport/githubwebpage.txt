@@ -1,0 +1,5 @@
+url link for personal portfolio
+https://chichao89.github.io/introtodeve2/myProject1/html/personal.html
+
+url link for accessibility report
+https://chichao89.github.io/introtodeve2/myProject1/AssessibilityReport/chichao89.github.io_2020-09-22_20-53-34.html
