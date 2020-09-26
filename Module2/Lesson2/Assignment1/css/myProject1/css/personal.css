@@ -23,7 +23,9 @@ img {
 }
 
 /*1em on top/bottom 0 left and right*/
-h1,h2,h3{
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 1em 0;
 }
@@ -40,9 +42,11 @@ h1.hTitle {
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
+  background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(9, 10, 10, 0);
 }
+
 /*css animation*/
 @keyframes animate {
   0% {
@@ -66,18 +70,18 @@ h2.title {
   text-emphasis: bold;
 }
 
-h2.title a{
+h2.title a {
   text-decoration: none;
   display: inline-block;
   color: #ee4266;
   background: #333;
 }
 
-h2.title a:visited{
+h2.title a:visited {
   color: lightcyan;
 }
 
-h2.title a:hover{
+h2.title a:hover {
   background: #086375;
   color: #fff;
 }
@@ -93,10 +97,11 @@ p.pHead1 {
 }
 
 /*div attributes*/
-.wrapper{
+.wrapper {
   display: block;
   text-align: center;
 }
+
 .wrapper .topNav {
   display: inline-block;
   margin: 0;
@@ -110,6 +115,7 @@ p.pHead1 {
   padding: 0 5px;
 
 }
+
 /*for the navigation links*/
 .bottom {
   display: inline-block;
@@ -146,7 +152,7 @@ p.pHead1 {
   padding-bottom: 0;
 }
 
-#landing .contentWrap{
+#landing .contentWrap {
   padding: 0 2em;
 }
 
@@ -157,7 +163,7 @@ p.pHead1 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: beige;
-  width:100%;
+  width: 100%;
   height: 500px;
   z-index: -1;
   opacity: 0.5;
@@ -176,15 +182,17 @@ p.pHead1 {
   padding: 0.5em 0;
 }
 
-.column{
+.column {
   margin: 0.6em;
 }
-.favourite{
+
+.favourite {
   height: 300px;
 }
-.favourite img{
+
+.favourite img {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 /*box content*/
@@ -200,9 +208,10 @@ p.pHead1 {
 
 /*sectionD attributes*/
 .columnFit {
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
 }
+
 .row:after {
   content: "";
   display: table;
@@ -210,36 +219,40 @@ p.pHead1 {
 }
 
 .labelHead {
-  color:red;
-  display:block;
-  text-align:center;
-  width:100%;
+  color: red;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
+
 input[type=text] {
   width: 50%;
 }
+
 textarea {
   width: 50%;
   height: 50%;
 }
 
 .formHead {
-  width:100%;
+  width: 100%;
 }
+
 /*footer attribute*/
 #footerHead .footer {
   font-size: 0.5em;
   color: black;
-  text-align:left;
+  text-align: left;
 }
-#footerHead .footerMain{
-  width:100%;
-  background:white;
+
+#footerHead .footerMain {
+  width: 100%;
+  background: white;
 }
 
 /*adding the hover rotate image*/
 .myImage:hover {
-/*-webkit-transform: rotateZ(-30deg);
+  /*-webkit-transform: rotateZ(-30deg);
 -ms-transform: rotateZ(-30deg);
 transform: rotateZ(-30deg);*/
   transition: 1.5s;
@@ -267,12 +280,12 @@ transform: rotateZ(-30deg);*/
     float: left;
     width: auto;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
   }
- 
+
   #sectionA .myContent p {
     display: block;
-    overflow:hidden;
+    overflow: hidden;
     color: black;
     line-height: 1.3em;
     font-size: 0.9em;
