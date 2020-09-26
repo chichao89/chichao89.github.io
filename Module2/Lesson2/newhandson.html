@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert('hi from head!');
+
+        function cal (x,y)
+        {   
+
+            z = x + y;
+            z = document.getElementById("demo").innerHTML = z;
+            return z;
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <!--<script>
+        alert('hi from body tag');
+    </script>
+    <input type="button" onclick="alert('hi after clicking on button / inline js')">-->
+    <p id="demo"></p>
+    <button type="button" onclick="cal(4,3)">Try it</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function testDOM(){
+            console.log('function is being called');
+            //identify an element inside the document
+            /*1.refer the document itself
+            2.get the element -> using an identifier*/
+            document.getElementById("testDiv").innerHTML = 'Mages';
+            //document.getElementsByClassName("test").innerHTML ="REplace";
+        }
+            function addClass(){
+                document.getElementById("testDiv1").classList.add("test");
+            }
+
+            function removeClass(){
+                document.getElementById("testDiv1").classList.remove("test");
+            }
+        
+    </script>
+    <style>
+        .test {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+    <div class="test" id="testDiv">Test Test Original</div>
+    <div id="testDiv1">Test Test Original</div>
+    <input type="button" value="Replace Text in DIV" onclick="testDOM()">
+    <input type="button" value="Add Class" onclick="addClass()">
+</html>

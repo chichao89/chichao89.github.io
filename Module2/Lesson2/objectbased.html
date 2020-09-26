@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Homework -> What is the difference between __proto__(parent)everything is inherited from  and prototype(type of an object-->
+    <script>
+        
+        function Person(name, age){
+            console.log("Person constructor called");
+            this.name = name;
+            console.log("Person constructor called and name assigned");
+            this.age = age;
+            console.log("Person constructor called and age assigned");
+        }
+
+        function newPerson(name, age){
+            console.log("Person constructor called");
+            this.name = name;
+            console.log("Person constructor called and name assigned");
+            this.age = age;
+            console.log("Person constructor called and age assigned");
+        }
+        console.log("Person me as a instance of a person class");
+        var me = new Person("ChiChao", 31);
+        var mygf = new Person("Lala", 34);
+
+        me.prototype = new newPerson;
+        me = new newPerson("ChiChao", 312);
+    </script>
+
+</head>
+<body>
+ 
+</body>
+</html>

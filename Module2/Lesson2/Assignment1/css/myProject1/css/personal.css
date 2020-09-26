@@ -1,0 +1,295 @@
+/*to make sure the size is contained and not take up additional width,height,padding*/
+* {
+  box-sizing: border-box;
+}
+
+/*body default elements*/
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  background: #333;
+  color: yellow;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/*to make sure the image is responsive that
+is 100% of the container*/
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*1em on top/bottom 0 left and right*/
+h1,h2,h3{
+  margin: 0;
+  padding: 1em 0;
+}
+
+/*added text animation*/
+h1.hTitle {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2.5em;
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(201, 144, 144), #fff, #32CD32);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(9, 10, 10, 0);
+}
+/*css animation*/
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
+}
+
+/*h3 class*/
+h3.bTitle {
+  color: violet;
+}
+
+/*h2 attributes*/
+h2.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  text-emphasis: bold;
+}
+
+h2.title a{
+  text-decoration: none;
+  display: inline-block;
+  color: #ee4266;
+  background: #333;
+}
+
+h2.title a:visited{
+  color: lightcyan;
+}
+
+h2.title a:hover{
+  background: #086375;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p.pHead1 {
+  color: darkkhaki;
+  font-size: 1.2em;
+}
+
+/*div attributes*/
+.wrapper{
+  display: block;
+  text-align: center;
+}
+.wrapper .topNav {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.topNav li {
+  float: left;
+  padding: 0 5px;
+
+}
+/*for the navigation links*/
+.bottom {
+  display: inline-block;
+  background: #333;
+  color: yellow;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.bottom:visited {
+  color: lightcyan;
+}
+
+.bottom:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+.navB:hover {
+  color: orange;
+}
+
+
+/*Header Landing */
+#landing {
+  min-height: 500px;
+  text-align: center;
+}
+
+#landing h1 {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+#landing .contentWrap{
+  padding: 0 2em;
+}
+
+#landing .backgroundImage {
+  position: absolute;
+  background-image: url("../images/japan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: beige;
+  width:100%;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/*section div attributes*/
+#sectionA {
+  background: #f7f7f2;
+  color: #ee4266;
+  padding-bottom: 3em;
+}
+
+#sectionB {
+  background: #333;
+  color: #52ffb8;
+  padding: 0.5em 0;
+}
+
+.column{
+  margin: 0.6em;
+}
+.favourite{
+  height: 300px;
+}
+.favourite img{
+  height: 100%;
+  width:100%;
+}
+
+/*box content*/
+#sectionC .box {
+  padding: 2em;
+  color: black;
+  background: white;
+}
+
+#sectionC .box:first-child {
+  background: #ee4266;
+}
+
+/*sectionD attributes*/
+.columnFit {
+  display:block;
+  width:100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.labelHead {
+  color:red;
+  display:block;
+  text-align:center;
+  width:100%;
+}
+input[type=text] {
+  width: 50%;
+}
+textarea {
+  width: 50%;
+  height: 50%;
+}
+
+.formHead {
+  width:100%;
+}
+/*footer attribute*/
+#footerHead .footer {
+  font-size: 0.5em;
+  color: black;
+  text-align:left;
+}
+#footerHead .footerMain{
+  width:100%;
+  background:white;
+}
+
+/*adding the hover rotate image*/
+.myImage:hover {
+/*-webkit-transform: rotateZ(-30deg);
+-ms-transform: rotateZ(-30deg);
+transform: rotateZ(-30deg);*/
+  transition: 1.5s;
+  -webkit-transition: 1.50s;
+  -ms-transition: 1.50s;
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+
+/* Media Queries */
+/*creating the columns with 4 columns when the width is 700px*/
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .contentWrap {
+    grid-column: 2/4;
+  }
+
+  #sectionA .myImage {
+    float: left;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+  }
+ 
+  #sectionA .myContent p {
+    display: block;
+    overflow:hidden;
+    color: black;
+    line-height: 1.3em;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 1.5em 1.5em;
+  }
+
+  #sectionB .column {
+    width: 30%;
+    float: left;
+    overflow: hidden;
+    display: block;
+    border: 1px solid white;
+  }
+
+  .box {
+    grid-column: span 2;
+  }
+
+}
