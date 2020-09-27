@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 2</title>
+    <script src="../Assignment2/js/Assignment2.js"></script>
+    <script>
+        function internalJS(){
+            alert("internal JS Call from script tag in head");
+        }
+    </script>
+</head>
+
+<body>
+    <button id="externalJS1" value = "This is an External JS call from external file" onclick="external()">This is an externalJS call</button>
+    <button id="inlineJS1" value ="This is an inlineJS call" onclick="alert('inlineJS Call using onclick')">This is an inlineJS call</button>
+    <button id="internalJS1" value ="This is an internal JS call" onclick="internalJS()">This is an internal JS call</button>
+
+</body>
+</html>
