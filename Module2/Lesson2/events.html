@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            alert('hi');
+            
+        }
+        // Problem statement add an event to the button html page
+        /**
+         * Solution
+         * 1. Identify the button
+         * 2. use id selector - sayHellobtn
+         * 3. add an event listener to the event*/
+    </script>
+</head>
+<body>
+    <!--on click handler-->
+    <button id="sayHelloBtn" onclick="sayHello()">Say hello</button>
+    <!--at the end of the page for event listner-->
+    <script>document.getElementById("sayHelloBtn").addEventListener('click',sayHello)</script>
+    <script>document.getElementById("sayHelloBtn").addEventListener('click',function(){
+        alert("bye");
+    })</script>
+</body>
+</html>
