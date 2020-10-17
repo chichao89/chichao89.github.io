@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+//         $(document).ready(function(){
+  
+//   alert("Hi! You have setup jQuery correctly!");
+
+// });
+
+$(document).ready(function(){
+    //follow every function syntax
+    $("#addClass").click(function(){
+        $("p,h1").addClass('red');
+    });
+
+    //follow every function syntax
+  $("#removeClass").click(function(){
+        $("p,h1").removeClass('red');     
+    });
+
+});
+
+
+
+    </script>
+<style>
+    .red{
+        color:red;
+    }
+</style>
+</head>
+<body>
+    <p>this is text 1</p>
+    <h1>this is text 2</h1>
+    <button id="addClass">add red color to the class</button>
+    <button id="removeClass">remove color to the class</button>
+    <!-- <p id="p1">1</p>
+    <div id="div1">2</div> -->
+</body>
+</html>

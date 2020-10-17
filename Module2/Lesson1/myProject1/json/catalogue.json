@@ -1,0 +1,70 @@
+{
+    "Shoe": [
+        {
+            "id":1,
+            "img": "../images/lebron-18.jpg",
+            "name": "LeBron 18",
+            "category": "Basketball Shoe",
+            "currency": "SGD",
+            "price" : 180
+        },
+        {
+            "id":2,
+            "img": "../images/lebron-soldier-13.jpg",
+            "name": "LeBron Soldier 14",
+            "category": "Basketball Shoe",
+            "currency": "SGD",
+            "price" : 388
+        },
+        {
+            "id":3,
+            "img": "../images/lebron-soldier-14.jpg",
+            "name": "Lebron Witness 5 EP",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 159
+        },
+        {
+            "id":4,
+            "img": "../images/lebron-witness-5.jpg",
+            "name": "Lebron Soldier 13",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 89
+        },
+        {
+            "id":5,
+            "img": "../images/nike-air-zoom-tempo.jpg",
+            "name": "Nike Air Zoom Tempo",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 159
+        },
+        {
+            "id":6,
+            "img": "../images/zoom-freak-2.jpg",
+            "name": "Zoom Freak 2",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 199
+        },
+        {
+            "id":7,
+            "img": "../images/zoom-lebron-3.jpg",
+            "name": "Lebron Zoom 3",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 169
+        },
+        {
+            "id":8,
+            "img": "../images/dbreak-type-shoe.jpg",
+            "name": "Dbreak Type Shoe",
+            "category": "BasketBall Shoe",
+            "currency": "SGD",
+            "price": 159
+        }
+
+
+    ]
+}

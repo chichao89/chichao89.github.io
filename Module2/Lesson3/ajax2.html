@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){    
+                    $.ajax('http://127.0.0.1:5500/Module2/Lesson3/json/test.json', {
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (resp) {
+                    console.log(typeof resp);
+                    console.log(resp);
+                    alert("success");
+                    },
+                        error: function (req, status, err) {
+                    console.log('something went wrong', status, err);
+                    }
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+        <button>to get back a json</button>
+
+</body>
+</html>

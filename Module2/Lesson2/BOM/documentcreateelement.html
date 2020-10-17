@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p>Click the button to make a BUTTON element with text.</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <script>
+    var counter = 0;
+
+    function myFunction() {
+      //Create this button only once
+      //Check if a button already exists
+      //Check if a counter is 0, then create else dont
+      //A variable that can be set to true, only create button if it's false
+      if (counter == 0) {
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML = "CLICK ME";
+        document.body.appendChild(btn);
+        counter++;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

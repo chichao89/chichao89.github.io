@@ -1,0 +1,28 @@
+{
+    "Currency": [{
+            "id": 1,
+            "currency": "SGD",
+            "exchangerate": 1
+        },
+        {
+            "id": 2,
+            "currency": "USD",
+            "exchangerate": 0.74
+        },
+        {
+            "id": 3,
+            "currency": "EUR",
+            "exchangerate":0.62
+        },
+        {
+            "id": 4,
+            "currency": "GBP",
+            "exchangerate":0.56
+        },
+        {
+            "id":5,
+            "currency": "AUD",
+            "exchangerate":1.03
+        }      
+    ]
+}

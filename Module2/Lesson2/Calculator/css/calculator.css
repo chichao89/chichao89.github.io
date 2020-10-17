@@ -1,0 +1,63 @@
+/*to make sure the size is contained and not take up additional width,height,padding*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: "Comfortaa", cursive;
+    background: yellow;
+    color: black;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .grid-item:hover {
+      background-color:gold;
+      cursor: pointer;
+  }
+
+
+  @media (min-width: 700px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background-color: #2196F3;
+      padding : 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        color : grey;
+      }
+    
+    .grid-item-header{
+        grid-row : auto / span 4;
+        grid-column : auto / span 4;
+        background-color: lightskyblue;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .grid-item-new{
+        grid-row : auto / span 4;
+        grid-column : auto / span 4;
+        background-color: lightseagreen;
+        padding: 50px;
+        text-align: right;
+        font-size: 25px;
+    }
+    .grid-item-show{
+      grid-row: auto/ span 2;
+      grid-column: auto/span 4;
+      background-color: blue;
+      color:grey;
+      text-align:right;
+      font-size: 15px;
+    }
+}

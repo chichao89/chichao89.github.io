@@ -1,0 +1,23 @@
+{
+    "students": [
+        {
+            "id":1,
+            "name": "SEE",
+            "age": 30,
+            "address": {
+                "country": "singapore"
+            },
+            "schools" : ["abc","hse"]
+        },
+        {
+            "id":2,
+            "name": "ALEX",
+            "age": 20,
+            "address": {
+                "country": "phillipine"
+            },
+            "schools" : ["abc","hse"]
+
+        }
+    ]
+}

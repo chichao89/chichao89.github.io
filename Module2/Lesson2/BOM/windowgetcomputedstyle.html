@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get the computed background color for the test div.</p>
+<p><button onclick="myFunction()">Try it</button></p>
+<div id="test" style="height: 50px;background-color: lightblue;">Test Div</div>
+<p>The computed background color for the test div is: <span id="demo"></span></p>
+
+<script>
+function myFunction(){
+  var elem = document.getElementById("test");
+  var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+  document.getElementById("demo").innerHTML = theCSSprop;
+}
+</script>
+
+</body>
+</html>

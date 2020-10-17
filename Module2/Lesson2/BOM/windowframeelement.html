@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to find out if the window on the right side (the result side) is in an iframe. If so, change its URL to "w3schools.com".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var frame = window.frameElement;
+  
+  if (frame) { 
+    frame.src = "https://www.google.com/";
+  }
+}
+</script>
+
+</body>
+</html>

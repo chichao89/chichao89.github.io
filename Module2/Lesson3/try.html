@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--1. Try to check if a number is > 0 if not then throw and error "this is error"
+2. Catch the error and alert it
+3. You should finally alert "all good" as well
+-->
+<input type ="text" id="number">
+<button type ="submit" onclick="check()">Submit an number</button>
+<p id="p01"></p>
+<script>
+    function check(){
+    let error1 = {
+        id : 1,
+        description: "is smaller than 0"
+    }
+    let error2 = {
+        id : 2,
+        description: "is not a number"
+    }
+    var message,x;
+    message = document.getElementById("p01");
+    message.innerHTML = "";
+    x = document.getElementById("number").value;
+    try{
+        if(x < 0) throw error1;
+        if(isNaN(x)) throw error2;
+    }catch(err){
+        message.innerHTML = "input " + err.description
+    }finally{
+        x.value = "";
+        //alert("all is good");
+    };
+    }
+</script>
+
+<!--
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function errorTrial() {
+      let error1 = {
+        id: "lessthanzero",
+        description: "The number is less than zero!!"
+      }
+      var message, x;
+      x = document.getElementById("number").value;
+      try {
+        if (x < 0) {
+          throw error1;
+        }
+      } catch (err) {
+        console.log(err);
+      } finally {
+        document.getElementById("message").innerHTML = "All good";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" id="number"></input>
+  <input type="button" onclick="errorTrial();" value="Test Number"></input>
+  <div id="message"></div>
+</body>
+
+</html>
+
+-->
+</body>
+</html>
