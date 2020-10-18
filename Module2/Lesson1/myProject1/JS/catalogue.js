@@ -34,8 +34,10 @@ var counter = 1;
 var prev = 0;
 var shoeObject = {};
 var currency = {};
-var url = 'http://127.0.0.1:5500/Module2/Lesson1/myProject1/json/catalogue.json';
-var url1 = 'http://127.0.0.1:5500/Module2/Lesson1/myProject1/json/currency.json';
+//var url = 'http://127.0.0.1:5500/Module2/Lesson1/myProject1/json/catalogue.json';
+var url = 'http://127.0.0.1:8887/catalogue.json';
+var url1 ='http://127.0.0.1:8887/currency.json'
+//var url1 = 'http://127.0.0.1:5500/Module2/Lesson1/myProject1/json/currency.json';
 
 //call for xmkhttrequest object for catalogue
 function loadDoc() {

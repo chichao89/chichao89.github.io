@@ -13,8 +13,14 @@ body {
     text-align: center;
   }
 
+  .main {
+    margin: auto;
+    max-width: 100%;
+  }
+
 header {
     text-align: center;
+    margin:auto;
   }
 
   .grid-item:hover {
@@ -35,17 +41,18 @@ header {
     background-color: #2980B9;
   }
   
+  /*
   .dropdown {
     left:500px;
     bottom: 70px;
     height:90px;
     position: relative;
     display: inline-block;
-  }
+  }*/
   
   .dropdown-content {
     display: none;
-    position: absolute;
+    /*position: absolute;*/
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
@@ -69,9 +76,28 @@ header {
     color: #c0c0c0;
     background-color: #ffffff;
     float:left;
+    position:relative;
+    bottom: 20px;
   }
 
-  @media (min-width: 700px) {
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin : auto;
+    text-align: center;
+    color : grey;
+    width :  100%;
+  }
+
+  .grid-item img {
+    max-width: 90%;
+    max-height: 90%;
+    margin:auto;
+    display: block;
+  }
+  
+  @media screen and (min-width: 700px) {
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -129,4 +155,35 @@ header {
         top: 10px;
         float: right;
       }
+
+      header {
+        color:red;
+      }
+
+      .dropdown {
+        left:500px;
+        bottom: 70px;
+        height:90px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .btsubmit {
+        cursor: not-allowed;
+        /*Button disabled - CSS color class*/
+        color: #c0c0c0;
+        background-color: #ffffff;
+        float:left;
+        bottom:5px;
+      }
+    
 }
