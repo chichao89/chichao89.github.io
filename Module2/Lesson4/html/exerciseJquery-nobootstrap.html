@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextArea</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+    <style>
+    #cText{
+        display: block;
+        margin: 1em 0;
+    }
+    #cText:read-only {
+        background:#ccc;
+      }
+    #complete{
+        padding: 5px 10px;
+        color: white;
+        border: 0;
+        background-color: #1b95e0;
+        letter-spacing: 1px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    body{
+    background-color: lightblue;
+    }
+    .flex-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+
+    form {
+    display: block;
+    margin-top: 0em;
+    }
+
+    .form-group {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    }
+    .form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+  @media (min-width: 1200px){
+.flex-container {
+    max-width: 1140px;
+}
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+    <form role="form">
+        <div class="row">
+            <div class="form-group">
+                <h1>My Form</h1>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+          <label for="text">First Name</label>
+          <input type="text" class="form-control" id="firstname" placeholder="FirstName">
+        </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+          <label for="text">Last Name</label>
+          <input type="text" class="form-control" id="lastname" placeholder="LastName">
+        </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+          <label for="exampleFormControlTextarea1">Your Feedback</label>
+          <textarea class="form-control" id="cText" rows="3" cols="50" maxlength="200" placeholder="Please input here" readonly></textarea>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group">
+            <section><span id="chars">200</span> characters remaining...</section>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group">
+            <input type="button" value="Submit" id="complete"/>
+        </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        let maxlength = 200;
+        $(document).ready(function () {
+          $("#cText").keyup(function () {
+            let length = $(this).val().length;
+            length = maxlength - length;
+            $("#chars").text(length);
+          });
+  
+          $("#cText").click(function() {
+              $("#cText").removeAttr("readonly");
+          });     
+        });
+    </script>
+</body>
+
+</html>
