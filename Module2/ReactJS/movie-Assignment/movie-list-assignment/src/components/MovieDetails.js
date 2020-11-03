@@ -1,9 +1,8 @@
 import React from 'react'
-import { MoviesData } from '../data'
 function MovieDetails(props) {
 
     
-    const movie = MoviesData.filter(key => (key.id === props.warn)).map( filteredName => (
+    const movie = props.child.filter(key => (key.id === props.warn)).map( filteredName => (
         <article key={filteredName.id}>
         <div className="MDetails"><img src= {filteredName.src2} alt= {filteredName.name} key={filteredName.id}/></div>
         <h1 className="hColor">{filteredName.name}</h1>

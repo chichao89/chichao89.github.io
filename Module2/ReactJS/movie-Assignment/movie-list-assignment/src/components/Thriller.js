@@ -25,7 +25,7 @@ import MovieDetails from './MovieDetails'
             return (
             <div>
             <button onClick={this.handleClick}>Click Back</button>
-            <MovieDetails warn={this.state.isToggleOn && this.state.key} />
+            <MovieDetails warn={this.state.isToggleOn && this.state.key} child={this.props.child} />
             </div>
             )
         }
