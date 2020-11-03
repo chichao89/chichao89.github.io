@@ -1,0 +1,149 @@
+/*  src/Title.css  */
+.Header {
+    max-height: 140px;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "logo nav";
+  
+    /* Cosmetics */
+    background-color: #282c35;
+    box-shadow: 0 22px 8px 0 rgba(10, 19, 10, 0.2);
+  }
+
+.Logo {
+    grid-area: logo;
+    height: 140px;
+    max-width:100%;
+    display:block;
+}
+
+
+.Nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+    margin-right: 30vw;
+  }
+  .Nav a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .Nav a:hover {
+    transform: scale(1.1);
+  }
+  .Nav button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+  }
+  
+  .Nav button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+  }
+
+  .Main {
+      display : grid;
+      grid-template-columns: repeat(4, auto);
+      border-radius: 10px;
+      padding: 5vw;
+  }
+
+  .Item{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin : 10px;
+  }
+
+  .MovieName {
+      margin : 5px 5px 5px 5px;
+      font-size: 1.1vw;
+  }
+
+  .Rating {
+    margin : 5px 5px 5px 5px;
+    font-size: 1vw;
+}
+
+
+.Footer {
+    width:100%;
+    background:black;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+  cursor: pointer;
+}
+
+.warning {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  display : grid;
+  font-size: 16pt;
+  color: white;
+}
+
+.MDetails {
+ float:left;
+}
+
+.MDetails img {
+  height : 50vw;
+  cursor: default;
+}
+
+.hColor{
+ color: #EFD001;
+}
+
+.sSection {
+  text-align: left;
+  display: inline-block;
+  width: 50vw;
+}
+
+.wrap{
+  right: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.wrap1{
+  right: 10px;
+  margin: 2vw;
+  padding: 10px;
+  text-align: left;
+}
+
+
+.word{
+  text-align:left;
+  overflow-wrap: break-word;
+  width:90%;
+}
+
+.left{
+  float:left;
+  width:40%;
+}
+
+
