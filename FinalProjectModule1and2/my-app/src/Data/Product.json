@@ -1,0 +1,185 @@
+ [
+        {
+            "id": 1,
+            "img": "CoffeeData/Coffee_Lots.001.png",
+            "title": "Brazil Catuai Amarelo filter",
+            "description": "Medium body, smooth and balanced, mild notes of fresh red berries, caramel, bread crust, hazelnut-chocolate, peanutbutter",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 5
+        },
+        {
+            "id": 2,
+            "img": "CoffeeData/Coffee_Lots.002.png",
+            "title": "Lapacho",
+            "description": "Lapacho bark, verbena, linden, rose leaf, passion fruit, apricot",
+            "price": "$8.90",
+            "category": "tea",
+            "quantity": 1
+        },
+        {
+            "id": 3,
+            "img": "CoffeeData/Coffee_Lots.003.png",
+            "title": "Island White",
+            "description": "White tea, flower petals, rose oil, lychee, grapefruit, apricot",
+            "price": "$9.80",
+            "category": "tea",
+            "quantity": 0
+
+        },
+        {
+            "id": 4,
+            "img": "CoffeeData/Coffee_Lots.004.png",
+            "title": "Peru Patche Espresso",
+            "description": "Full bodied, smooth mouthfeel, fresh mandarin acidity, almond, black spices, raisins in aftertaste",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 3
+        },
+        {
+            "id": 5,
+            "img": "CoffeeData/Coffee_Lots.005.png",
+            "title": "Amer Forte Espresso Roast",
+            "description": "Powerful and creamy body, earthy notes, roasted hazelnuts, dark caramel sweetness, stonefruits in the aftertaste",
+            "price": "$8.80",
+            "category": "espresso",
+            "quantity": 6
+        },
+        {
+            "id": 6,
+            "img": "CoffeeData/Coffee_Lots.006.png",
+            "title": "El Salvador La Palma Espresso Roast",
+            "description": "Medium and smooth bodied, fresh lime, agrum, milkchocolate, pistachio",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 0
+        },
+        {
+            "id": 7,
+            "img": "CoffeeData/Coffee_Lots.007.png",
+            "title": "El Salvador La Palma Filter Roast",
+            "description": "Mild body, blue plum, blueberry, pistachio, bergamot, milk chocolate",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 2
+        },
+        {
+            "id": 8,
+            "img": "CoffeeData/Coffee_Lots.008.png",
+            "title": "Brazil Catuai Vermelho Filter",
+            "description": "Mild body, fresh red berry, cranberry, milk chocolate, almond, roasted hazelnuts",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 8
+        },
+        {
+            "id": 9,
+            "img": "CoffeeData/Coffee_Lots.009.png",
+            "title": "India Jember Filter Roast",
+            "description": "Great body, mango, melon, dried banana, sesame, cacao, rock sugar",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 0
+        },
+        {
+            "id": 10,
+            "img": "CoffeeData/Coffee_Lots.010.png",
+            "title": "India Primrose Espresso Roast",
+            "description": "Full and balanced body, orange blossom, peach, leather, malty , earthy notes, smokey",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 0
+        },
+        {
+            "id": 11,
+            "img": "CoffeeData/Coffee_Lots.011.png",
+            "title": "Brazil Catuai Amarelo espresso roast",
+            "description": "Medium & smooth bodied, notes of dried cranberry, peanut, roasted hazelnut",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 3
+        },
+        {
+            "id": 12,
+            "img": "CoffeeData/Coffee_Lots.012.png",
+            "title": "India Jember Espresso Roast",
+            "description": "Full and balanced body, black spices, peach, almond, dark chocolate",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 1
+        },
+        {
+            "id": 13,
+            "img": "CoffeeData/Coffee_Lots.013.png",
+            "title": "Mexico Mundo Novo Filter",
+            "description": "Medium to full bodied, smooth, fresh notes of passionfruit, mandarin, lavender, chestnut",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 3
+        },
+        {
+            "id": 14,
+            "img": "CoffeeData/Coffee_Lots.014.png",
+            "title": "Brazil Catuai Vermelho Espresso",
+            "description": "Medium body, hazelnut, roasted almond, notes of fresh red berry, blueberry, cacao",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 0
+        },
+        {
+            "id": 15,
+            "img": "CoffeeData/Coffee_Lots.015.png",
+            "title": "India Butter Beanz Espresso",
+            "description": "Intense and dark, earthy notes, cognac, leather, pure chocolate, peach, dried apricot",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 7
+        },
+        {
+            "id": 16,
+            "img": "CoffeeData/Coffee_Lots.016.png",
+            "title": "Cerrado Pearl Filter",
+            "description": "Medium bodied, sweet raisins, hazelnut flavour with a refreshing aftertaste",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 4
+        },
+        {
+            "id": 17,
+            "img": "CoffeeData/Coffee_Lots.017.png",
+            "title": "El Salvador Tekisic Filter Roast",
+            "description": "Delightfully sweet with a smooth body, delicate floral notes, ripe lemon",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 3
+        },
+        {
+            "id": 18,
+            "img": "CoffeeData/Coffee_Lots.018.png",
+            "title": "Black Pearl Espresso",
+            "description": "Mild body, notes of roasted hazelnut, almond, dark caramel en fresh red berries",
+            "price": "$10.90",
+            "category": "espresso",
+            "quantity": 4
+        },
+        {
+            "id": 19,
+            "img": "CoffeeData/Coffee_Lots.019.png",
+            "title": "Peru Patche Filter",
+            "description": "Medium bodied, dried apricots, peach, milk chocolate, orange blossom",
+            "price": "$10.90",
+            "category": "filter",
+            "quantity": 0
+        }
+        
+        
+
+
+
+
+
+        
+
+
+
+]

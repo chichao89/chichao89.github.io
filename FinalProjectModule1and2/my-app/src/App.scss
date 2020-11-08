@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@500&display=swap');
+
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit
+}
+
+body {
+    margin:  0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    color: #202020;
+    background-color: #fff;
+    font-smooth: always;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    text-align:center;
+}
+
+@media (min-width: 992px){
+.nav-link{
+    position:relative;
+}
+
+.nav-link:after {
+    content:'';
+    position: absolute;
+    width: 0; 
+    height: 0.2em;
+    display: block;
+    right:0;
+    background: #fff;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.nav-link:hover:after{
+    width:100%;
+    background: white;
+  }
+}
+
+.jumbotron-fluid{
+  background-image:
+  linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(41, 38, 40, 0.73)),
+  url('./Assets/coffee.jpg');
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  z-index: -2;
+}
+
+.bannerword{
+    text-align: left;;
+}
+
+/*adjusting the card */
+.card-text{
+    font-size:.7em;
+}
+
+@media screen and (max-width: 600px) {
+    .display-2 {
+        font-size: 11vw;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
+
+
+
+
+
+
+
+  

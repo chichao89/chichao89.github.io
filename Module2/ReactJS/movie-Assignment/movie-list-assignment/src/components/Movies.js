@@ -23,13 +23,29 @@ class Movies extends Component {
     render() {    
         switch(this.state.switchButton){
             case  this.state.Latest === this.state.myURL : {
-                return <LatestMovies child={this.state.myMovies}/>
+                
+                return (
+                    <div>
+                        <h1>Latest Films</h1>
+                <LatestMovies child={this.state.myMovies}/>
+                    </div>
+                )
             }
             case this.state.Adventure === this.state.myURL : {
-                return <Adventure child={this.state.myMovies}/>
+                return (
+                        <div>
+                         <h1>Adventure Films</h1>   
+                <Adventure child={this.state.myMovies}/>
+                        </div>
+                )
             }
             case this.state.Thriller === this.state.myURL : {
-                return <Thriller child={this.state.myMovies}/>
+                return (
+                    <div>
+                    <h1>Thriller Films</h1>
+                <Thriller child={this.state.myMovies}/>
+                    </div>
+                )
             }
             default :
             return <LatestMovies child={this.state.myMovies}/>

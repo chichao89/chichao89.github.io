@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div><h1>Latest Films</h1></div>
       <HashRouter>
       <Route exact path="/" component={Movies} />
       <Route path="/LatestFlim" component={Movies} />
