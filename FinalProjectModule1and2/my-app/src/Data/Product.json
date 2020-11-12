@@ -6,7 +6,14 @@
             "description": "Medium body, smooth and balanced, mild notes of fresh red berries, caramel, bread crust, hazelnut-chocolate, peanutbutter",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 5
+            "quantity": 5,
+            "subheading" : "EDNILSON & WALTER DUTRA FAZENDAS DUTRA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Southeast Brazil, Minas Gerais, Manhuaçu",
+            "origin"   : "Brazil",
+            "harvest"  : "2017",
+            "process"  : "natural"
         },
         {
             "id": 2,
@@ -15,7 +22,15 @@
             "description": "Lapacho bark, verbena, linden, rose leaf, passion fruit, apricot",
             "price": "$8.90",
             "category": "tea",
-            "quantity": 1
+            "quantity": 0,
+            "subheading" : "EDNILSON & WALTER DUTRA FAZENDAS DUTRA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Southeast Brazil, Minas Gerais, Amazon",
+            "origin"   : "Brazil",
+            "harvest"  : "2017",
+            "process"  : "natural"
+
         },
         {
             "id": 3,
@@ -24,7 +39,14 @@
             "description": "White tea, flower petals, rose oil, lychee, grapefruit, apricot",
             "price": "$9.80",
             "category": "tea",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "Junshan Island Hunan Province, CHINA",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Dongting Lake,Junshan Island Hunan Province",
+            "origin"   : "China",
+            "harvest"  : "2017",
+            "process"  : "natural"
 
         },
         {
@@ -34,7 +56,15 @@
             "description": "Full bodied, smooth mouthfeel, fresh mandarin acidity, almond, black spices, raisins in aftertaste",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 3
+            "quantity": 3,
+            "subheading" : "Maël Boutsen & Ronald Delgado, Peru",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Maël Boutsen & Ronald Delgado",
+            "region"   : "La Cascarilla, Cajamarca",
+            "origin"   : "Peru",
+            "harvest"  : "2019",
+            "process"  : "fully washed 22h"
+
         },
         {
             "id": 5,
@@ -43,7 +73,14 @@
             "description": "Powerful and creamy body, earthy notes, roasted hazelnuts, dark caramel sweetness, stonefruits in the aftertaste",
             "price": "$8.80",
             "category": "espresso",
-            "quantity": 6
+            "quantity": 6,
+            "subheading" : "MARTINE E. DE HAES & EULLER A. RANGEL FAZENDA AREMA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Houseblend Est. 2015",
+            "region"   : "Sudeste , Karnataka",
+            "origin"   : "Brazil, India",
+            "harvest"  : "2019",
+            "process"  : "fully washed 22h"
         },
         {
             "id": 6,
@@ -52,7 +89,15 @@
             "description": "Medium and smooth bodied, fresh lime, agrum, milkchocolate, pistachio",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "ANDRES QUINTANILLA LA BUENA ESPERANZA, EL SALVADOR",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Andres Quintanilla",
+            "region"   : "Eastern El Salvador, Cacahuatique Mountains",
+            "origin"   : "El Salvador",
+            "harvest"  : "2019",
+            "process"  : "fully washed"
+
         },
         {
             "id": 7,
@@ -61,7 +106,14 @@
             "description": "Mild body, blue plum, blueberry, pistachio, bergamot, milk chocolate",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 2
+            "quantity": 2,
+            "subheading" : "ANDRES QUINTANILLA LA BUENA ESPERANZA, EL SALVADOR",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Andres Quintanilla",
+            "region"   : "Eastern El Salvador, Cacahuatique Mountains",
+            "origin"   : "El Salvador",
+            "harvest"  : "2019",
+            "process"  : "fully washed"
         },
         {
             "id": 8,
@@ -70,7 +122,15 @@
             "description": "Mild body, fresh red berry, cranberry, milk chocolate, almond, roasted hazelnuts",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 8
+            "quantity": 8,
+            "subheading" : "EDNILSON & WALTER DUTRA FAZENDAS DUTRA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Southeast Brazil, Minas Gerais, Manhuaçu",
+            "origin"   : "Brazil",
+            "harvest"  : "2018",
+            "process"  : "pulped natural"
+
         },
         {
             "id": 9,
@@ -79,7 +139,14 @@
             "description": "Great body, mango, melon, dried banana, sesame, cacao, rock sugar",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "Jacob Mammen BADRA ESTATE, India",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Jacob Mammen",
+            "region"   : "South India, Bangalore, Shivajinagar",
+            "origin"   : "India",
+            "harvest"  : "2019",
+            "process"  : "Fully washed"
         },
         {
             "id": 10,
@@ -88,7 +155,14 @@
             "description": "Full and balanced body, orange blossom, peach, leather, malty , earthy notes, smokey",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "Jacob Mammen BADRA ESTATE, India",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Jacob Mammen",
+            "region"   : "South India, Bangalore",
+            "origin"   : "India",
+            "harvest"  : "2019",
+            "process"  : "Natural"
         },
         {
             "id": 11,
@@ -97,7 +171,14 @@
             "description": "Medium & smooth bodied, notes of dried cranberry, peanut, roasted hazelnut",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 3
+            "quantity": 3,
+            "subheading" : "EDNILSON & WALTER DUTRA FAZENDAS DUTRA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Southeast Brazil, Minas Gerais, Manhuaçu",
+            "origin"   : "Brazil",
+            "harvest"  : "2017",
+            "process"  : "natural"
         },
         {
             "id": 12,
@@ -106,7 +187,14 @@
             "description": "Full and balanced body, black spices, peach, almond, dark chocolate",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 1
+            "quantity": 1,
+            "subheading" : "JACOB MAMMEN BADRA ESTATE, INDIA",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Jacob Mammen",
+            "region"   : "South India, Bangalore, Shivajinagar",
+            "origin"   : "INDIA",
+            "harvest"  : "2019",
+            "process"  : "Fully washed"
         },
         {
             "id": 13,
@@ -115,34 +203,63 @@
             "description": "Medium to full bodied, smooth, fresh notes of passionfruit, mandarin, lavender, chestnut",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 3
+            "quantity": 3,
+            "subheading" : "THOMAS EDELMANN FINCA HAMBURGO, MEXICO",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Thomas Edelmann",
+            "region"   : "Southeast Mexico, Chiapas",
+            "origin"   : "Mexico",
+            "harvest"  : "2015-2016",
+            "process"  : "natural"
         },
         {
             "id": 14,
             "img": "CoffeeData/Coffee_Lots.014.png",
             "title": "Brazil Catuai Vermelho Espresso",
             "description": "Medium body, hazelnut, roasted almond, notes of fresh red berry, blueberry, cacao",
-            "price": "$10.90",
+            "price": "$20.90",
             "category": "espresso",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "EDNILSON & WALTER DUTRA FAZENDAS DUTRA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Ednilson & Walter Dutra",
+            "region"   : "Southeast Brazil, Minas Gerais, Manhuaçu",
+            "origin"   : "Brazil",
+            "harvest"  : "2017",
+            "process"  : "pulped natural"
         },
         {
             "id": 15,
             "img": "CoffeeData/Coffee_Lots.015.png",
             "title": "India Butter Beanz Espresso",
             "description": "Intense and dark, earthy notes, cognac, leather, pure chocolate, peach, dried apricot",
-            "price": "$10.90",
+            "price": "$12.90",
             "category": "espresso",
-            "quantity": 7
+            "quantity": 7,
+            "subheading" : "B.B CHENGAPPA PALTHOPE ESTATE, INDIA",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "B.B. Chengappa",
+            "region"   : "South India, Karnataka, Kutta",
+            "origin"   : "India",
+            "harvest"  : "2017",
+            "process"  : "fully washed"
+
         },
         {
             "id": 16,
             "img": "CoffeeData/Coffee_Lots.016.png",
             "title": "Cerrado Pearl Filter",
             "description": "Medium bodied, sweet raisins, hazelnut flavour with a refreshing aftertaste",
-            "price": "$10.90",
+            "price": "$11.90",
             "category": "filter",
-            "quantity": 4
+            "quantity": 4,
+            "subheading" : "MARTINE E. DE HAES & EULLER A. RANGEL FAZENDA AREMA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Martine E. De Haes & Euller A. Rangel",
+            "region"   : "Cerrado region",
+            "origin"   : "Brazil",
+            "harvest"  : "2019",
+            "process"  : "pulped natural"
         },
         {
             "id": 17,
@@ -151,7 +268,14 @@
             "description": "Delightfully sweet with a smooth body, delicate floral notes, ripe lemon",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 3
+            "quantity": 3,
+            "subheading" : "ANDRES QUINTANILLA LA BUENA ESPERANZA, EL SALVADOR",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Andres Quintanilla",
+            "region"   : "Eastern El Salvador, Cacahuatique Mountains",
+            "origin"   : "El Salvador",
+            "harvest"  : "2018",
+            "process"  : "fully washed"
         },
         {
             "id": 18,
@@ -160,7 +284,14 @@
             "description": "Mild body, notes of roasted hazelnut, almond, dark caramel en fresh red berries",
             "price": "$10.90",
             "category": "espresso",
-            "quantity": 4
+            "quantity": 4,
+            "subheading" : "MARTINE E. DE HAES & EULLER A. RANGEL FAZENDA AREMA, BRAZIL",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Martine E. De Haes & Euller A. Rangel",
+            "region"   : "Cerrado region",
+            "origin"   : "Brazil",
+            "harvest"  : "2019",
+            "process"  : "pulped natural"
         },
         {
             "id": 19,
@@ -169,7 +300,14 @@
             "description": "Medium bodied, dried apricots, peach, milk chocolate, orange blossom",
             "price": "$10.90",
             "category": "filter",
-            "quantity": 0
+            "quantity": 0,
+            "subheading" : "MAËL BOUTSEN & RONALD DELGADO COATI MUNDO, PERU",
+            "weightbag"  : ["250g", "1kg"],
+            "farmers"  : "Maël Boutsen & Ronald Delgado",
+            "region"   : "La Cascarilla, Cajamarca",
+            "origin"   : "Peru",
+            "harvest"  : "2019",
+            "process"  : "fully washed 22h"
         }
         
         

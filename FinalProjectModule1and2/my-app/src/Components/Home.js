@@ -16,6 +16,9 @@ function Home(props) {
   }
   
   return (
+    <div>
+    <h2 className="h2text">Hot Products</h2>
+    <button className="btn btn-dark btn btn-outline-light">Shop All Products</button>
     <CardDeck>
       {shuffleArray(props.product).slice(0,3).map((key) => (
           <Card className="col-lg-4" key={key.id}>
@@ -30,6 +33,7 @@ function Home(props) {
           </Card>
       ))}
     </CardDeck>
+    </div>
   );
 }
 

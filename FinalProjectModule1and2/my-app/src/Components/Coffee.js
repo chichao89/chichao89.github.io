@@ -1,23 +1,35 @@
-import React, { Component } from 'react'
-import Product from '../Data/Product.json'
-import Home from './Home'
+import React, { Component } from "react";
+import Product from "../Data/Product.json";
+import Home from "./Home";
+import Shop from "./Shop";
 
 
 class Coffee extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-             coffeeProduct: Product
-        }
-    }
+  constructor(props) {
+    let url = props.location.pathname;
+    const urlpath = parseInt((url.match(/(\d+)/g)));
+    super(props);
+    this.state = {
+      coffeeProduct: Product,
+      myUrl: urlpath,
+      Shop: 1,
+      switchButton: true,
+    };
+  }
 
-    render() {
+  render() {
+    switch (this.state.switchButton) {
+      case this.state.Shop === this.state.myUrl: {
         return (
-            <>
-                <Home product= {this.state.coffeeProduct}/>
-            </>
-        )
+          <>
+            <Shop product={this.state.coffeeProduct} />
+          </>
+        );
+      }
+      default:
+        return <Home product={this.state.coffeeProduct} />;
     }
+  }
 }
 
-export default Coffee
+export default Coffee;
