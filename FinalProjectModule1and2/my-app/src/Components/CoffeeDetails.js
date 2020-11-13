@@ -10,8 +10,8 @@ function CoffeeDetails(props) {
 
 
     const coffeeDetails = props.product.filter(key => (key.id === props.warn)).map( selected => (
-        <Row>
-          <Col lg={5} key={selected.id}>
+        <Row key={selected.id}>
+          <Col lg={5}>
           <img className="img-fluid" src={selected.img} alt={selected.img}/>
           </Col>
           <Col lg={5}>
@@ -23,9 +23,9 @@ function CoffeeDetails(props) {
           <Row className="m-3">
           <Col lg={5}><div className="m-1"><h6 className="text-uppercase font-weight-bold text-left">Weight Bag</h6></div>
           <div className="m-1">
-          <Form.Control as="select">
-          <option value>Choose an option</option>
-          <option value={selected.weightbag[0]} selected>{selected.weightbag[0]}</option>
+          <Form.Control as="select" defaultValue={selected.weightbag[0] }>
+          <option value>Option</option>
+          <option value={selected.weightbag[0]}>{selected.weightbag[0]}</option>
           <option value={selected.weightbag[1]}>{selected.weightbag[1]}</option>
           </Form.Control>
           </div>

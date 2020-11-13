@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
 html {
     -webkit-box-sizing: border-box;
@@ -41,7 +42,7 @@ body {
     position:relative;
 }
 
-.nav-link:after {
+.link2:after {
     content:'';
     position: absolute;
     width: 0; 
@@ -53,7 +54,7 @@ body {
     transition-timing-function: ease-out;
 }
 
-.nav-link:hover:after{
+.link2:hover:after{
     width:100%;
     background: white;
   }
@@ -85,6 +86,14 @@ body {
 /*footer*/
 footer {
     background:#1b1c1c
+}
+
+.aboutme{
+    color: #4a4a4a;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: normal;
 }
 
 
@@ -133,10 +142,31 @@ footer input[type=text],input[type=email]{
 
 img {
     cursor: pointer;
+    max-width:100%;
 }
 
 .img-fluid{
     max-width : 80%;
+}
+
+.none{
+    cursor: default;
+}
+
+#parent{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden; 
+}
+#parent img{
+  display: block;
+  transition: transform .4s; 
+  max-width:100%;
+}
+#parent:hover img{
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
 }
 
 hr{
@@ -154,11 +184,51 @@ hr{
     text-align:left;
 }
 
+//section
+.locateS{
+    font-family:'Source Sans Pro',sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    line-height: 3rem;
+    text-transform: none;
+    max-width : 600px;
+    margin: 3.7rem auto 0;
+}
+
+.leftToRight{
+  position: relative;
+  transition:color 0.25s ease;
+}
+.leftToRight:hover{
+    color:red;
+}
+.leftToRight::after{
+  position: absolute;
+  content: '';
+  bottom: -0.5vw;
+  left: 5vw;
+  width: 0;
+  height: 10%;
+  background-color: black;
+  transform-origin:left;
+  transition:width 0.25s ease;
+  z-index:-1;
+}
+.leftToRight:hover::after{
+    width: 60%;
+}
+
 @media screen and (max-width: 600px) {
     .display-2 {
         font-size: 11vw;
         font-weight: 300;
         line-height: 1.2;
+    }
+
+    .locateS{
+        font-family:'Source Sans Pro',sans-serif;
+        font-size: 5vw;
+        margin: 1rem auto 0;
     }
   }
 
