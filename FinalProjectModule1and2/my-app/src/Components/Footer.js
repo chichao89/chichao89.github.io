@@ -26,10 +26,10 @@ const Footer = () => {
                         <div className="m-5">
                         <h3 className="text-white text-center">Contact Us</h3>
                         <div className="d-flex justify-content-center">   
-                            <a href={facebook} target="_blank" rel="noreferrer" className="fa fa-facebook"/>
-                            <a href={twitter} target="_blank" rel="noreferrer" className="fa fa-twitter"></a>
-                            <a href={instagram}  target="_blank" rel="noreferrer" className="fa fa-instagram"></a>
-                            <a href={linkedin} target="_blank" rel="noreferrer" className="fa fa-linkedin"></a>
+                            <a href={facebook} target="_blank" rel="noreferrer" className="fab fa-facebook"/>
+                            <a href={twitter} target="_blank" rel="noreferrer" className="fab fa-twitter"></a>
+                            <a href={instagram}  target="_blank" rel="noreferrer" className="fab fa-instagram"></a>
+                            <a href={linkedin} target="_blank" rel="noreferrer" className="fab fa-linkedin"></a>
                             </div>
                         </div>
                     </Col>

@@ -8,7 +8,7 @@ const Jumbotron = () => {
   return (
     <Jumbo fluid className="min-vh-100">
       <Container>
-        <div className="col-lg-8 bannerword">
+        <div className="col-lg-8 text-left">
         <h6 className="text-white text-uppercase">Now you can feel the energy</h6>
         <h1 className="display-2 text-warning">Start your day with
         <Typical

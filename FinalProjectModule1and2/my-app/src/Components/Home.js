@@ -7,7 +7,7 @@ import {id} from './NavigationBar'
 import CoffeeDetails from './CoffeeDetails'
 
 function Home(props) {
-  
+ 
   const shuffleArray = () =>{
     let length  = props.product.length - 1;
     for(; length > 0; length--){
@@ -50,7 +50,7 @@ function Home(props) {
               <Card.Text>{key.description}</Card.Text>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">{key.price}</small>
+              <small className="text-muted">{key.price[0].toFixed(2)}</small>
             </Card.Footer>
           </Card>
       ))}

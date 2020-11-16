@@ -1,45 +1,74 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
-
-
-
+import Cart from './Cart'
+import { Nav } from 'react-bootstrap';
+import {NavLink } from 'react-router-dom'
 
 function CoffeeDetails(props) {
 
+    let [total, setPrice] = useState(0)
+    let [final, setFinal] = useState(1)
+    let finalAmount = total * final;
 
-    const coffeeDetails = props.product.filter(key => (key.id === props.warn)).map( selected => (
+    //cart code
+    // const [cart, setCart] = useState([])
+    // const [cartTotal, setCartTotal] = useState(0);
+
+    useEffect(() => {
+        total = 0;
+        final = 0;
+        
+    });
+
+    // const addToCart = (selected) => {
+    //   setCart([...cart, selected]);
+    // };
+
+    // const removeFromCart = (el) => {
+    //   let hardCopy = [...cart];
+    //   hardCopy = hardCopy.filter((cartItem) => cartItem.id !== el.id);
+    //   setCart(hardCopy);
+    // };
+
+    const coffeeDetails = props.product.filter(key => (key.id === props.warn)).map(selected => (
         <Row key={selected.id}>
           <Col lg={5}>
           <img className="img-fluid" src={selected.img} alt={selected.img}/>
           </Col>
           <Col lg={5}>
-          <div className="m-3"><h1 className="text-uppercase font-weight-bold text-left">{selected.title}</h1></div>
-          <div className="m-3"><h5 className="text-uppercase text-left">{selected.subheading}</h5></div>
-          <div className="m-3"><p className="text-left"><span className="text-uppercase text-light bg-dark">{selected.category}</span></p></div>
-          <div className="m-3"><hr/></div>
-          <div className="m-3"><p className="single text-justify">We only sell whole coffee beans in our web shop. The coffee bean is less fragile, it will better preserve its flavour and aroma in our special valved bags, this will give you the best quality when brewing your coffee at home.</p></div>
+            <div className="m-3"><h1 className="text-uppercase font-weight-bold text-left">{selected.title}</h1></div>
+            <div className="m-3"><h5 className="text-uppercase text-left">{selected.subheading}</h5></div>
+            <div className="m-3"><p className="text-left"><span className="text-uppercase text-light bg-dark">{selected.category}</span></p></div>
+            <div className="m-3"><hr/></div>
+            <div className="m-3"><p className="single text-justify">We only sell whole coffee beans in our web shop. The coffee bean is less fragile, it will better preserve its flavour and aroma in our special valved bags, this will give you the best quality when brewing your coffee at home.</p></div>
           <Row className="m-3">
           <Col lg={5}><div className="m-1"><h6 className="text-uppercase font-weight-bold text-left">Weight Bag</h6></div>
           <div className="m-1">
-          <Form.Control as="select" defaultValue={selected.weightbag[0] }>
-          <option value>Option</option>
-          <option value={selected.weightbag[0]}>{selected.weightbag[0]}</option>
-          <option value={selected.weightbag[1]}>{selected.weightbag[1]}</option>
+          <Form.Control as="select" onChange={(e)=>setPrice(parseFloat(total = e.target.value))}>
+          <option>Option</option>
+          <option value={selected.price[0]}>{selected.weightbag[0]}</option>
+          <option value={selected.price[1]}>{selected.weightbag[1]}</option>
           </Form.Control>
           </div>
           </Col>
           <Col lg={5}>
           <div className="m-1"><h6 className="text-uppercase font-weight-bold text-left">Quantity</h6></div>
-          <div className="m-1">
-          <Form.Control type="number" min="1" max={selected.quantity}/>
+          <div className="mx-auto float-left">
+          <input className="form-control" type='text' value={selected.finalQty=final} onChange={(e)=> setFinal(final = e.target.value)}/>
+          {(final >= selected.quantity) ? 
+            <div className="text-danger text-left">{selected.quantity} quantities available only</div>
+            : null
+          }
+          {/* <NumericInput min={1} max={selected.quantity} value={final}/>  */}
+          {/* <Form.Control type="number" step={1} min={1} max={selected.quantity} value={final} onChange={(e) => final + e.target.value}/> */}
           </div>
           </Col>
           <Col lg={2}>
           <div className="m-1"><h6 className="text-uppercase font-weight-bold text-left">Total</h6></div>
-          <div className="m-1">
-          <p>{selected.price}</p>
+          <div className="m-1">      
+          <p className="float-left"><span>{`$`}</span><span>{(selected.finalAmt = finalAmount).toFixed(2)}</span></p>
           </div>
           </Col>
           </Row>
@@ -49,7 +78,9 @@ function CoffeeDetails(props) {
             {selected.quantity === 0 ? (
               <div className="float-left"><small className="text-danger">This item is Out of Stock!</small></div>
             ) : (
-              <div className="float-left"><button>Add to Cart</button></div>
+              <div className="float-left">
+                <button>Add to Cart</button>
+                </div>
               )}  
           </div>
           </Col>
@@ -108,13 +139,25 @@ function CoffeeDetails(props) {
         </Col>
       </Row>
     ))
+
+    // const cartItems = cart.map((selected) => (
+    //   <div key={selected.id}>
+    //     <p>{selected.id},{selected.title},{selected.finalQty},{selected.finalAmt}</p>
+    //   </div>
+    // ));
+    // console.log(cart)
+
       
     if (!props.warn) {
         return null;
       }
 
     return (
-        <>
+        <>  
+            {/* <div>Cart</div>
+            
+            <Nav.Link className="link2" as={NavLink} to="/Cart"><Cart cart={cartItems}/></Nav.Link> */}
+
             {coffeeDetails}
         </>
     )

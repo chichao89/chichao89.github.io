@@ -30,6 +30,7 @@ import MovieDetails from './MovieDetails'
         }
         else{
         return (
+            
             <div className="Main">
                {this.props.child.filter(key => (key.categoryId === this.state.categoryID)).map( filteredName => (
                     <div className="Item" key={filteredName.id}>

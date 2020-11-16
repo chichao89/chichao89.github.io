@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 const Layout = (props) => {
     return (
-       <Container>
+       <Container className="p-5">
            {props.children}
        </Container>
     )

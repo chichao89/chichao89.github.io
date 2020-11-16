@@ -5,26 +5,26 @@ import "./App.scss";
 
 import Layout from "./Components/Layout";
 import NavigationBar from "./Components/NavigationBar";
-import { Route, HashRouter, Switch } from "react-router-dom";
-import Home from "./Components/Home";
-import Shop from "./Components/Shop"
+import { Route, HashRouter} from "react-router-dom";
 import Story from "./Components/Story";
 import Coffee from "./Components/Coffee";
 import Locate from "./Components/Locate";
-import Jumbotron from "./Components/Jumbotron"
 import Footer from "./Components/Footer"
+import Cart from "./Components/Cart"
+import CoffeeDetails from "./Components/CoffeeDetails"
+
 
 function App() {
   return (
     <React.Fragment>
       <HashRouter>
         <NavigationBar />
-        <Jumbotron />
-        <Layout>
             <Route exact path="/" component={Coffee} />
+        <Layout>  
             <Route path="/Story" component={Story} />
             <Route path="/Shop" component={Coffee} />
             <Route path="/Locate" component={Locate} />
+            {/* <Route path="/Cart"  component={Cart}/> */}
         </Layout>
       </HashRouter>
           <Footer/>  
