@@ -9,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Counter/>
-    <CounterWithHooks/>
+    {/* <Counter/>
+    <CounterWithHooks/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,36 +2,38 @@ import React, {useState,useEffect} from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
-import Cart from './Cart'
 import { Nav } from 'react-bootstrap';
 import {NavLink } from 'react-router-dom'
+import Navigation from './NavigationBar'
 
 function CoffeeDetails(props) {
 
     let [total, setPrice] = useState(0)
     let [final, setFinal] = useState(1)
+    //let [isLoaded,setLoaded] = useState(false)
     let finalAmount = total * final;
-
-    //cart code
-    // const [cart, setCart] = useState([])
-    // const [cartTotal, setCartTotal] = useState(0);
+    let arrayItem = JSON.parse(localStorage.getItem('original')) || []  //olditem
+    let cartLength = JSON.parse(localStorage.getItem('length')) || [] //for length
+    const [cart, setCart] = useState([])
+    let [cartTotal, setCartTotal] = useState(0);
 
     useEffect(() => {
         total = 0;
         final = 0;
-        
-    });
+    },[cart]);
 
-    // const addToCart = (selected) => {
-    //   setCart([...cart, selected]);
-    // };
+    
+    const addToCart = (selected) => {
+       setCart([...cart, selected]);
+       setCartTotal(cartTotal = arrayItem.length)
+    };
 
-    // const removeFromCart = (el) => {
-    //   let hardCopy = [...cart];
-    //   hardCopy = hardCopy.filter((cartItem) => cartItem.id !== el.id);
-    //   setCart(hardCopy);
-    // };
+    const [more] = cart
+    
 
+    arrayItem.push(more)
+    cartLength = cartTotal
+    
     const coffeeDetails = props.product.filter(key => (key.id === props.warn)).map(selected => (
         <Row key={selected.id}>
           <Col lg={5}>
@@ -61,8 +63,7 @@ function CoffeeDetails(props) {
             <div className="text-danger text-left">{selected.quantity} quantities available only</div>
             : null
           }
-          {/* <NumericInput min={1} max={selected.quantity} value={final}/>  */}
-          {/* <Form.Control type="number" step={1} min={1} max={selected.quantity} value={final} onChange={(e) => final + e.target.value}/> */}
+         
           </div>
           </Col>
           <Col lg={2}>
@@ -79,7 +80,7 @@ function CoffeeDetails(props) {
               <div className="float-left"><small className="text-danger">This item is Out of Stock!</small></div>
             ) : (
               <div className="float-left">
-                <button>Add to Cart</button>
+                <button onClick={()=>addToCart(selected)}>Add to Cart</button>
                 </div>
               )}  
           </div>
@@ -139,25 +140,21 @@ function CoffeeDetails(props) {
         </Col>
       </Row>
     ))
-
-    // const cartItems = cart.map((selected) => (
-    //   <div key={selected.id}>
-    //     <p>{selected.id},{selected.title},{selected.finalQty},{selected.finalAmt}</p>
-    //   </div>
-    // ));
-    // console.log(cart)
-
-      
+    
     if (!props.warn) {
         return null;
       }
 
     return (
         <>  
-            {/* <div>Cart</div>
-            
-            <Nav.Link className="link2" as={NavLink} to="/Cart"><Cart cart={cartItems}/></Nav.Link> */}
-
+            {cart.length === 0 ? null :
+               <div>
+              {localStorage.setItem('original', (JSON.stringify(arrayItem)))}
+              {localStorage.setItem('length', (JSON.stringify(cartLength)))}    
+              <div>{cartTotal} items has been added to Cart</div>
+              <div><Nav.Link className="mx-auto mw-25 w-25" as={NavLink} to={`/Cart/`}><button className="btn btn-dark btn btn-outline-light">Go to Cart</button></Nav.Link></div>              
+              </div>
+            }
             {coffeeDetails}
         </>
     )

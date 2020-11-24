@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><p id="click">0</p></div>
+    <button onClick="handle()">click ME</button>
+    <script>
+       
+        let click = 0
+        //console.log("item",click)
+            //function handle() {
+                //let item = JSON.parse(localStorage.getItem("test")) || []
+                //console.log("beforeitem",item)
+                //click += 1
+                //document.getElementById("click").innerHTML = click
+                //item.push(click)
+                //console.log("afteritem",item)
+                //localStorage.setItem("test",JSON.stringify(item))
+            //}
+         let itemArray = [{id:1,value:5,amt:1},{id:1,value:8,amt:1},{id:2,value:1,amt:1},{id:2,value:2,amt:1},{id:1,value:3,amt:1}]
+         let total = []
+        
+        //  var output = itemArray.reduce( (final,data) => {
+        //     let isAlready = final.find( ( value ) => { 
+        //     value.id == data.id;
+        // });
+        // if(!isAlready){
+        //     final.push( data );
+        // } else {
+        // var index = final.indexOf(isAlready);
+        //     final[index].value = final[index].value + data.value;
+        //  }
+        // return final;
+        //  },[] )
+        // console.log("output",output)
+
+        itemArray = itemArray.reduce((c, i)=>{
+        let cc = c.findIndex((e)=>e.id==i.id);
+        if(cc==-1) c.push({id: i.id, value: i.value, amt:i.amt});
+        else{ 
+        c[cc].value += (i.value);
+        c[cc].amt += (i.amt);
+        }
+        return c
+        }, []);
+        console.log("test",itemArray)
+
+
+
+        //  itemArray.map((key,index,elements) => {
+        //     const container = {}
+        //     var next = elements[index+1]
+        //     if(next != undefined){
+        //         if(key.id === next.id)
+        //         {
+        //          container[key.id] = key.value + next.value
+        //         }
+        //     }
+        //     a.push(container)
+        //  })
+         
+            
+                
+        //  ).reduce((sum,value) => sum + value,0)
+             //debugger
+         
+    </script>
+</body>
+</html>

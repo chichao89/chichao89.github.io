@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <div id="test"></div>
     <script>
+    function spinWords(str){
+    let words = [];
+    words = str.split(" ");
+    console.log(words);
+    let y = " "
+    words.map(function(key) {
+                if (key.length > 5) {
+                    return y += key.split('').reverse().join('') + ' '
+                }
+                else{
+                    return y += key + ' '
+                }           
+            })
+    console.log(y);
+            
+           
+            
+
         
+    // for (let count = 0 ; count < words.length ; count ++){
+    //   if(words[count].length >= 5){
+    //     console.log(words[count]);
+    //      //result = words[count].split('').reverse().join('')
+    //   }
+     
+    } 
     </script>
 </body>
 </html>
